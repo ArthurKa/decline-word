@@ -9,7 +9,7 @@ function declineWord(n, body, one = '', two_till_four = '', zero_or_five_till_ni
     if(n2 === 1) {
       return `${body}${one}`;
     }
-    if(2 <= n && n <= 4) {
+    if(2 <= n2 && n2 <= 4) {
       return `${body}${two_till_four}`;
     }
   }
