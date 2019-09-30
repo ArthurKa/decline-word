@@ -10,7 +10,7 @@ $ npm i decline-word
 ### For Russian and Ukrainian languages:
 1st parameter: **amount** of item(s)\
 2nd: main word **body** (unchangeable part of word for each form)\
-3nd (optional, dafault = `''`): word ending for **1 item**\
+3rd (optional, dafault = `''`): word ending for **1 item**\
 4th (optional, dafault = `''`): word ending for **2 items**\
 5th (optional, dafault = `''`): word ending for **5 items**
 ``` js
@@ -31,7 +31,7 @@ console.log(147, declineWord(147, 'апельсин', '', 'и', 'ів'));  // 14
 There is some difference of default parameter values comparing with the Russian and Ukrainian languages.\
 1st parameter: **amount** of item(s)\
 2nd: main word **body** (unchangeable part of word for each form)\
-3nd (optional, dafault = `''`): word ending for **1 item**\
+3rd (optional, dafault = `''`): word ending for **1 item**\
 4th (optional, dafault = `'s'`): word ending for **2 items**\
 5th (optional, dafault = `<4th parameter>`): word ending for **5 items**\
 That difference is made for more convenience using with English words.
