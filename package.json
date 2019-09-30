@@ -1,10 +1,13 @@
 {
   "name": "decline-word",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Declines words in Russian, Ukrainian and English languages.",
   "main": "declineWord.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ArthurKa/decline-word/issues"
   },
-  "homepage": "https://github.com/ArthurKa/decline-word#readme"
+  "homepage": "https://github.com/ArthurKa/decline-word#readme",
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
 }
