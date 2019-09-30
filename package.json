@@ -1,11 +1,15 @@
 {
   "name": "decline-word",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Declines words in Russian, Ukrainian and English languages.",
   "main": "declineWord.js",
   "directories": {
     "test": "test"
   },
+  "keywords": [
+    "decline word",
+    "word declination"
+  ],
   "scripts": {
     "test": "mocha test"
   },
