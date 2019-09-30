@@ -1,6 +1,6 @@
 {
   "name": "decline-word",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Declines words in Russian, Ukrainian and English languages.",
   "main": "declineWord.js",
   "directories": {

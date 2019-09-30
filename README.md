@@ -7,11 +7,11 @@ $ npm i decline-word
 ```
 
 ## Usage
-### For **Russian** and **Ukrainian** languages.
-1st parameter: **amount** of item(s)
-2nd: main word **body** (unchangeable part of word for each form)
-3nd (optional, dafault = `''`): word ending for **1 item**
-4th (optional, dafault = `''`): word ending for **2 items**
+### For Russian and Ukrainian languages:
+1st parameter: **amount** of item(s)\
+2nd: main word **body** (unchangeable part of word for each form)\
+3nd (optional, dafault = `''`): word ending for **1 item**\
+4th (optional, dafault = `''`): word ending for **2 items**\
 5th (optional, dafault = `''`): word ending for **5 items**
 ``` js
 const declineWord = require('decline-word');
@@ -27,19 +27,19 @@ console.log(84, declineWord(84, 'апельсин', '', 'и', 'ів'));  // 84 �
 console.log(147, declineWord(147, 'апельсин', '', 'и', 'ів'));  // 147 апельсинів
 ```
 
-### For **English** language.
-There is some difference of default parameter values comparing with the Russian and Ukrainian languages.
-1st parameter: **amount** of item(s)
-2nd: main word **body** (unchangeable part of word for each form)
-3nd (optional, dafault = `''`): word ending for **1 item**
-4th (optional, dafault = `'s'`): word ending for **2 items**
-5th (optional, dafault = `<4th parameter>`): word ending for **5 items**
-That is made for more convenience using with English words.
+### For English language:
+There is some difference of default parameter values comparing with the Russian and Ukrainian languages.\
+1st parameter: **amount** of item(s)\
+2nd: main word **body** (unchangeable part of word for each form)\
+3nd (optional, dafault = `''`): word ending for **1 item**\
+4th (optional, dafault = `'s'`): word ending for **2 items**\
+5th (optional, dafault = `<4th parameter>`): word ending for **5 items**\
+That difference is made for more convenience using with English words.
 ``` js
 const declineWord = require('decline-word');
 
 console.log(1, declineWord(1, 'door'));  // 1 door
-console.log(10, declineWord(10, 'doors'));  // 10 doors
+console.log(10, declineWord(10, 'door'));  // 10 doors
 
 console.log(11, declineWord(11, 'hero', '', 'es'));  // 11 heroes
 console.log(21, declineWord(21, 'hero', '', 'es'));  // 21 hero
