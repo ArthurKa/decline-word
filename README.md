@@ -60,7 +60,7 @@ const declineWrapper = (...args) => n => declineWord(n, ...args);
 
 const declApples = declineWrapper('яблок', 'о', 'а');
 const declOranges = declineWrapper('апельсин', '', 'а', 'ов');
-const declPears = declineWrapper('груш', 'а', 'ы');
+const declPears = declineWrapper('груш', 'а', 'и');
 
 for(let i = 0; i <= 6; i++) {
   console.log(`${i} ${declApples(i)} | ${i} ${declOranges(i)} | ${i} ${declPears(i)}`);
@@ -69,9 +69,9 @@ for(let i = 0; i <= 6; i++) {
 /*
 1st iteration: '0 яблок | 0 апельсинов | 0 груш'
 2nd iteration: '1 яблоко | 1 апельсин | 1 груша'
-3rd iteration: '2 яблока | 2 апельсина | 2 грушы'
-4th iteration: '3 яблока | 3 апельсина | 3 грушы'
-5th iteration: '4 яблока | 4 апельсина | 4 грушы'
+3rd iteration: '2 яблока | 2 апельсина | 2 груши'
+4th iteration: '3 яблока | 3 апельсина | 3 груши'
+5th iteration: '4 яблока | 4 апельсина | 4 груши'
 6th iteration: '5 яблок | 5 апельсинов | 5 груш'
 7th iteration: '6 яблок | 6 апельсинов | 6 груш'
 */
