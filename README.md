@@ -56,11 +56,9 @@ console.log(`32 ${declineWord(32, '', 'tooth', 'teeth')}`);  // 32 teeth
 ``` js
 const declineWord = require('decline-word');
 
-const declineWrapper = (...args) => n => declineWord(n, ...args);
-
-const declApples = declineWrapper('яблок', 'о', 'а');
-const declOranges = declineWrapper('апельсин', '', 'а', 'ов');
-const declPears = declineWrapper('груш', 'а', 'и');
+const declApples = declineWord.wrap('яблок', 'о', 'а');
+const declOranges = declineWord.wrap('апельсин', '', 'а', 'ов');
+const declPears = declineWord.wrap('груш', 'а', 'и');
 
 for(let i = 0; i <= 6; i++) {
   console.log(`${i} ${declApples(i)} | ${i} ${declOranges(i)} | ${i} ${declPears(i)}`);
@@ -79,9 +77,7 @@ for(let i = 0; i <= 6; i++) {
 
 ### Declination of cases:
 ``` js
-const declineWord = require('decline-word');
-
-const declineWrapper = (...args) => n => declineWord(n, ...args);
+const { declineWrapper } = require('decline-word');
 
 // Nominative case, именительный падеж, називний відмінок
 const nomCase = declineWrapper('падеж', '', 'а', 'ей');

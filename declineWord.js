@@ -26,4 +26,7 @@ function declineWord(n, body, one = null, two_till_four = null, zero_or_five_til
   return `${body}${zero_or_five_till_nine}`;
 }
 
+declineWord.wrap = (...args) => n => declineWord(n, ...args);
+declineWord.declineWrapper = declineWord.wrap;
+
 module.exports = declineWord;
