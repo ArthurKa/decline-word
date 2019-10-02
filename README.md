@@ -1,4 +1,5 @@
-Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.
+Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
+Maybe it works for some other languages, who knows.
 
 ## Installation
 `decline-word` is available via npm:
