@@ -10,7 +10,7 @@ $ npm i decline-word
 ## Usage
 ### For Russian and Ukrainian languages:
 1st parameter: **amount** of item(s)\
-2nd: **main** part of the word (unchangeable for each form)\
+2nd: **main part** of the word (unchangeable for each form)\
 3rd (optional, default = `''`): word ending for **1 item**\
 4th (optional, default = `''`): word ending for **2 items**\
 5th (optional, default = `''`): word ending for **5 items**
@@ -31,7 +31,7 @@ console.log(`147 ${declineWord(147, 'апельсин', '', 'и', 'ів')}`);  /
 ### For English language:
 There are some differences of default parameter values comparing with the Russian and Ukrainian languages.\
 1st parameter: **amount** of item(s)\
-2nd: **main** part of the word (unchangeable for each form)\
+2nd: **main part** of the word (unchangeable for each form)\
 3rd (optional, default = `''`): word ending for **1 item**\
 4th (optional, default = `'s'`): word ending for **2 items**\
 5th (optional, default = `<4th parameter>`): word ending for **5 items**\
@@ -66,13 +66,13 @@ for(let i = 0; i <= 6; i++) {
 }
 
 /*
-1st iteration: '0 яблок | 0 апельсинов | 0 груш'
-2nd iteration: '1 яблоко | 1 апельсин | 1 груша'
-3rd iteration: '2 яблока | 2 апельсина | 2 груши'
-4th iteration: '3 яблока | 3 апельсина | 3 груши'
-5th iteration: '4 яблока | 4 апельсина | 4 груши'
-6th iteration: '5 яблок | 5 апельсинов | 5 груш'
-7th iteration: '6 яблок | 6 апельсинов | 6 груш'
+  1st iteration: '0 яблок | 0 апельсинов | 0 груш'
+  2nd iteration: '1 яблоко | 1 апельсин | 1 груша'
+  3rd iteration: '2 яблока | 2 апельсина | 2 груши'
+  4th iteration: '3 яблока | 3 апельсина | 3 груши'
+  5th iteration: '4 яблока | 4 апельсина | 4 груши'
+  6th iteration: '5 яблок | 5 апельсинов | 5 груш'
+  7th iteration: '6 яблок | 6 апельсинов | 6 груш'
 */
 ```
 
@@ -122,4 +122,5 @@ console.log('на пяти', prepCase(5));  // на пяти падежах
 $ npm test
 ```
 
+---
 Your improve suggestions and bug reports are welcome any time.
