@@ -1,3 +1,5 @@
+# decline-word
+
 Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
 Maybe it works for some other languages, who knows.
 
@@ -123,4 +125,5 @@ $ npm test
 ```
 
 ---
+
 Your improve suggestions and bug reports are welcome any time.
