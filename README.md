@@ -1,10 +1,10 @@
-# decline-word@1.2.4
+# decline-word@1.2.5
 
-[![Dependency status](https://img.shields.io/librariesio/release/npm/decline-word/1.2.4)](https://libraries.io/npm/decline-word/1.2.4)
-[![Known vulnerabilities](https://snyk.io/test/npm/decline-word/1.2.4/badge.svg)](https://snyk.io/test/npm/decline-word/1.2.4)
-[![Install size](https://packagephobia.now.sh/badge?p=decline-word@1.2.4)](https://packagephobia.now.sh/result?p=decline-word@1.2.4)
-[![Version](https://img.shields.io/badge/npm-v1.2.4-blue.svg)](https://www.npmjs.com/package/decline-word/v/1.2.4)
-[![Total downloads](https://img.shields.io/npm/dt/decline-word?label=total%20downloads)](https://www.npmjs.com/package/decline-word)
+[![Dependency status](https://img.shields.io/librariesio/release/npm/decline-word/1.2.5)](https://libraries.io/npm/decline-word/1.2.5)
+[![Known vulnerabilities](https://snyk.io/test/npm/decline-word/1.2.5/badge.svg)](https://snyk.io/test/npm/decline-word/1.2.5)
+[![Install size](https://packagephobia.now.sh/badge?p=decline-word@1.2.5)](https://packagephobia.now.sh/result?p=decline-word@1.2.5)
+[![Version](https://img.shields.io/badge/npm-v1.2.5-blue.svg)](https://www.npmjs.com/package/decline-word/v/1.2.5)
+[![Total downloads](https://img.shields.io/npm/dt/decline-word?label=total%20downloads)](https://npm-stat.com/charts.html?package=decline-word)
 
 Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
 Maybe it works for some other languages, who knows.
@@ -12,7 +12,7 @@ Maybe it works for some other languages, who knows.
 ## Installation
 `decline-word` is available via npm:
 ``` bash
-$ npm i decline-word@1.2.4
+$ npm i decline-word@1.2.5
 ```
 
 ## Usage
