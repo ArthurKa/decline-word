@@ -1,13 +1,12 @@
 [![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.2.6?label=all%20dependencies)](https://libraries.io/npm/decline-word/1.2.6)
-[![Vulnerabilities](https://snyk.io/test/npm/decline-word/1.2.6/badge.svg)](https://snyk.io/test/npm/decline-word/1.2.6)
-[![Install size](https://packagephobia.now.sh/badge?p=decline-word@1.2.6)](https://packagephobia.now.sh/result?p=decline-word@1.2.6)
+[![Known vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.2.6?label=known%20vulnerabilities)](https://snyk.io/test/npm/decline-word/1.2.6)
 [![NPM-version](https://img.shields.io/badge/npm-v1.2.6-blue.svg)](https://www.npmjs.com/package/decline-word/v/1.2.6)
+[![Install size](https://packagephobia.now.sh/badge?p=decline-word@1.2.6)](https://packagephobia.now.sh/result?p=decline-word@1.2.6)
 [![Total downloads](https://img.shields.io/npm/dt/decline-word?label=total%20downloads)](https://npm-stat.com/charts.html?package=decline-word)
 
 # decline-word@1.2.6
 
-Helps you to decline words such as names, single or even combination of words via Morpher service located http://morpher.ru/Demo.aspx in three available languages: Russian, Ukrainian and Kazakh.\
-Maybe it works for some other languages, who knows.
+Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
 
 ## Installation
 `decline-word` is available via npm:
