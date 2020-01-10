@@ -7,8 +7,11 @@
     "test": "test"
   },
   "keywords": [
+    "word",
     "decline word",
-    "word declination"
+    "word declination",
+    "singular",
+    "plural"
   ],
   "scripts": {
     "test": "mocha test"
