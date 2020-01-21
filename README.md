@@ -1,10 +1,10 @@
-[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.2.8?label=all%20dependencies)](https://libraries.io/npm/decline-word/1.2.8)
-[![Known vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.2.8?label=known%20vulnerabilities)](https://snyk.io/test/npm/decline-word/1.2.8)
-[![NPM-version](https://img.shields.io/badge/npm-v1.2.8-blue.svg)](https://www.npmjs.com/package/decline-word/v/1.2.8)
-[![Install size](https://packagephobia.now.sh/badge?p=decline-word@1.2.8)](https://packagephobia.now.sh/result?p=decline-word@1.2.8)
-[![Total downloads](https://img.shields.io/npm/dt/decline-word?label=total%20downloads)](https://npm-stat.com/charts.html?package=decline-word)
+[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.2.9?style=flat-square "All dependencies of decline-word@1.2.9")](https://libraries.io/npm/decline-word/1.2.9)
+[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.2.9?style=flat-square "Reported vulnerabilities of decline-word@1.2.9")](https://snyk.io/test/npm/decline-word/1.2.9)
+[![NPM-version](https://img.shields.io/badge/npm-v1.2.9-blue.svg?style=flat-square "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.2.9)
+[![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.2.9?label=size 'Install size of decline-word@1.2.9')](https://packagephobia.now.sh/result?p=decline-word@1.2.9)
+[![Total downloads](https://img.shields.io/npm/dt/decline-word?style=flat-square "Total downloads for all the time")](https://npm-stat.com/charts.html?package=decline-word)
 
-# decline-word@1.2.8
+# decline-word@1.2.9
 
 Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
 Maybe it works for some other languages, who knows.
@@ -12,7 +12,7 @@ Maybe it works for some other languages, who knows.
 ## Installation
 `decline-word` is available via npm:
 ``` bash
-$ npm i decline-word@1.2.8
+$ npm i decline-word@1.2.9
 ```
 
 ## Usage
@@ -133,3 +133,6 @@ $ npm test
 ---
 
 Your improve suggestions and bug reports are welcome any time.
+
+## See also
+- [word-decliner](https://www.npmjs.com/package/word-decliner)

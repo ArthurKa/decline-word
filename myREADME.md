@@ -116,3 +116,6 @@ console.log('на пяти', prepCase(5));  // на пяти падежах
 ```
 
 <footer>
+
+<seeAlsoTitle>
+- [word-decliner](<npmjs-com>/package/word-decliner)

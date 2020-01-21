@@ -1,6 +1,6 @@
 {
   "name": "decline-word",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Declines words in Russian, Ukrainian and English languages.",
   "main": "declineWord.js",
   "directories": {
@@ -20,7 +20,10 @@
     "type": "git",
     "url": "git+https://github.com/ArthurKa/decline-word.git"
   },
-  "author": "ArthurKa",
+  "author": {
+    "name": "ArthurKa",
+    "email": "arthur.katruk@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ArthurKa/decline-word/issues"
