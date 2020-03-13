@@ -1,7 +1,7 @@
 <header>
 
 Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
-Maybe it works for some other languages, who knows.
+It may work for some other languages, who knows.
 
 <installation>
 
@@ -50,6 +50,8 @@ console.log(`101 ${declineWord(101, 'cand', 'y', 'ies')}`);  // 101 candy
 console.log(`31 ${declineWord(31, '', 'tooth', 'teeth')}`);  // 31 tooth
 console.log(`32 ${declineWord(32, '', 'tooth', 'teeth')}`);  // 32 teeth
 ```
+
+Note: `decline-word` declines English words incorrect. Just because of `if not equal one` is very simple check algorithm this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correct.
 
 ## Advanced usage
 ``` js
@@ -115,7 +117,9 @@ console.log('на двух', prepCase(2));  // на двух падежах
 console.log('на пяти', prepCase(5));  // на пяти падежах
 ```
 
-<footer>
+<testing>
 
 <seeAlsoTitle>
 - [word-decliner](<npmjs-com>/package/word-decliner)
+
+<suggestions>

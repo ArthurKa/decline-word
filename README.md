@@ -1,18 +1,18 @@
-[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.2.9?style=flat-square "All dependencies of decline-word@1.2.9")](https://libraries.io/npm/decline-word/1.2.9)
-[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.2.9?style=flat-square "Reported vulnerabilities of decline-word@1.2.9")](https://snyk.io/test/npm/decline-word/1.2.9)
-[![NPM-version](https://img.shields.io/badge/npm-v1.2.9-blue.svg?style=flat-square "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.2.9)
-[![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.2.9?label=size 'Install size of decline-word@1.2.9')](https://packagephobia.now.sh/result?p=decline-word@1.2.9)
+[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.2.10?style=flat-square "All dependencies of decline-word@1.2.10")](https://libraries.io/npm/decline-word/1.2.10)
+[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.2.10?style=flat-square "Reported vulnerabilities of decline-word@1.2.10")](https://snyk.io/test/npm/decline-word/1.2.10)
+[![NPM-version](https://img.shields.io/badge/npm-v1.2.10-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.2.10)
+[![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.2.10?label=size 'Install size of decline-word@1.2.10')](https://packagephobia.now.sh/result?p=decline-word@1.2.10)
 [![Total downloads](https://img.shields.io/npm/dt/decline-word?style=flat-square "Total downloads for all the time")](https://npm-stat.com/charts.html?package=decline-word)
 
-# decline-word@1.2.9
+# decline-word@1.2.10
 
 Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
-Maybe it works for some other languages, who knows.
+It may work for some other languages, who knows.
 
 ## Installation
 `decline-word` is available via npm:
 ``` bash
-$ npm i decline-word@1.2.9
+$ npm i decline-word@1.2.10
 ```
 
 ## Usage
@@ -60,6 +60,8 @@ console.log(`101 ${declineWord(101, 'cand', 'y', 'ies')}`);  // 101 candy
 console.log(`31 ${declineWord(31, '', 'tooth', 'teeth')}`);  // 31 tooth
 console.log(`32 ${declineWord(32, '', 'tooth', 'teeth')}`);  // 32 teeth
 ```
+
+Note: `decline-word` declines English words incorrect. Just because of `if not equal one` is very simple check algorithm this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correct.
 
 ## Advanced usage
 ``` js
@@ -130,9 +132,9 @@ console.log('на пяти', prepCase(5));  // на пяти падежах
 $ npm test
 ```
 
+## See also
+- [word-decliner](https://www.npmjs.com/package/word-decliner)
+
 ---
 
 Your improve suggestions and bug reports are welcome any time.
-
-## See also
-- [word-decliner](https://www.npmjs.com/package/word-decliner)
