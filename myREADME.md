@@ -7,11 +7,14 @@ It may work for some other languages, who knows.
 
 ## Usage
 ### For Russian and Ukrainian languages:
-1st parameter: **amount** of item(s)\
-2nd: **main part** of the word (unchangeable for each form)\
-3rd (optional, default = `''`): word ending for **1 item**\
-4th (optional, default = `''`): word ending for **2 items**\
-5th (optional, default = `''`): word ending for **5 items**
+| Parameter | Required | Default value | Value                                                           |
+|-----------|----------|---------------|-----------------------------------------------------------------|
+| 1st       | true     |               | **amount** of items                                             |
+| 2nd       | true     |               | **main part** of the word (unchangeable beginning of each form) |
+| 3rd       | false    | `''`          | word ending for **1 item**                                      |
+| 4th       | false    | `''`          | word ending for **2 items**                                     |
+| 5th       | false    | `''`          | word ending for **5 items**                                     |
+
 ``` js
 const declineWord = require('.');
 
@@ -24,16 +27,26 @@ console.log(`1 ${declineWord(1, 'апельсин', '', 'и', 'ів')}`);  // 1 
 console.log(`11 ${declineWord(11, 'апельсин', '', 'и', 'ів')}`);  // 11 апельсинів
 console.log(`84 ${declineWord(84, 'апельсин', '', 'и', 'ів')}`);  // 84 апельсини
 console.log(`147 ${declineWord(147, 'апельсин', '', 'и', 'ів')}`);  // 147 апельсинів
+
+console.log(`0 ${declineWord(0, '', 'гра', 'гри', 'ігор')}`);  // 0 ігор
+console.log(`1 ${declineWord(1, '', 'гра', 'гри', 'ігор')}`);  // 1 гра
+console.log(`4 ${declineWord(4, '', 'гра', 'гри', 'ігор')}`);  // 4 гри
+console.log(`25 ${declineWord(25, '', 'гра', 'гри', 'ігор')}`);  // 25 ігор
 ```
 
 ### For English language:
-There are some differences of default parameter values comparing with the Russian and Ukrainian languages.\
-1st parameter: **amount** of item(s)\
-2nd: **main part** of the word (unchangeable for each form)\
-3rd (optional, default = `''`): word ending for **1 item**\
-4th (optional, default = `'s'`): word ending for **2 items**\
-5th (optional, default = `<4th parameter>`): word ending for **5 items**\
-That difference is made for more convenience using with English words.
+There are some differences of default parameter values comparing with the Russian and Ukrainian languages.
+
+| Parameter | Required | Default value     | Value                                                           |
+|-----------|----------|-------------------|-----------------------------------------------------------------|
+| 1st       | true     |                   | **amount** of items                                             |
+| 2nd       | true     |                   | **main part** of the word (unchangeable beginning of each form) |
+| 3rd       | false    | `''`              | word ending for **1 item**                                      |
+| 4th       | false    | `'s'`             | word ending for **2 items**                                     |
+| 5th       | false    | `<4th parameter>` | word ending for **5 items**                                     |
+
+This difference makes more convenience for using with English words.
+
 ``` js
 const declineWord = require('.');
 
@@ -51,7 +64,7 @@ console.log(`31 ${declineWord(31, '', 'tooth', 'teeth')}`);  // 31 tooth
 console.log(`32 ${declineWord(32, '', 'tooth', 'teeth')}`);  // 32 teeth
 ```
 
-Note: `decline-word` declines English words incorrect. Just because of `if not equal one` is very simple check algorithm this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correct.
+Note: `decline-word` declines English words incorrect. Just because of `if not equal one` is very simple check algorithm (and I'm too lazy to change already made one) this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correct.
 
 ## Advanced usage
 ``` js
