@@ -1,6 +1,6 @@
 {
   "name": "decline-word",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Declines words in Russian, Ukrainian and English languages.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -24,7 +24,7 @@
     "ts-compile": "tsc --declaration",
     "my-compile": "node ../compile.js",
     "build": "npm run build:clean && npm run ts-compile && npm run my-compile",
-    "publish:prepare": "mkdir -p ./build/build && mv ./build/* ./build/build; cp ./package* README.md ./build",
+    "publish:prepare": "mkdir -p ./build/build && mv ./build/* ./build/build; cp -r ./package* ./README.md ./test ./build",
     "pu": "npm pu ./build",
     "my-publish": "npm run publish:prepare && npm run pu"
   },

@@ -1,6 +1,6 @@
 <header>
 
-Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
+Helps you to inflect words of **Russian**, **Ukrainian** and **English** languages.\
 It may work for some other languages, who knows.
 
 <installation>
@@ -35,7 +35,7 @@ console.log(`25 ${declineWord(25, '', 'гра', 'гри', 'ігор')}`);  // 25
 ```
 
 ### For English language:
-There are some differences of default parameter values comparing with the Russian and Ukrainian languages.
+There are some differences of parameter default values comparing to Russian and Ukrainian languages.
 
 | Parameter | Required | Default value     | Value                                                           |
 |-----------|----------|-------------------|-----------------------------------------------------------------|
@@ -45,7 +45,9 @@ There are some differences of default parameter values comparing with the Russia
 | 4th       | false    | `'s'`             | word ending for **2 items**                                     |
 | 5th       | false    | `<4th parameter>` | word ending for **5 items**                                     |
 
-This difference makes more convenience for using with English words.
+This difference makes more convenience for using English words.
+
+Note: `decline-word` declines English words incorrect according to language rules. Just because of `if not equal to one` is very simple check algorithm (and I'm too lazy to change already made one) this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correctly.
 
 ```ts
 import declineWord from './decline-word';
@@ -54,17 +56,15 @@ console.log(`1 ${declineWord(1, 'door')}`);  // 1 door
 console.log(`10 ${declineWord(10, 'door')}`);  // 10 doors
 
 console.log(`11 ${declineWord(11, 'hero', '', 'es')}`);  // 11 heroes
-console.log(`21 ${declineWord(21, 'hero', '', 'es')}`);  // 21 hero
+console.log(`21 ${declineWord(21, 'hero', '', 'es')}`);  // 21 hero (but correct is "heros")
 
 console.log(`5 ${declineWord(5, 'cand', 'y', 'ies')}`);  // 5 candies
-console.log(`101 ${declineWord(101, 'cand', 'y', 'ies')}`);  // 101 candy
+console.log(`101 ${declineWord(101, 'cand', 'y', 'ies')}`);  // 101 candy (but correct is "candies")
 
 // declineWord(31, 't', 'ooth', 'eeth') or...
-console.log(`31 ${declineWord(31, '', 'tooth', 'teeth')}`);  // 31 tooth
+console.log(`31 ${declineWord(31, '', 'tooth', 'teeth')}`);  // 31 tooth (but correct is "teeth")
 console.log(`32 ${declineWord(32, '', 'tooth', 'teeth')}`);  // 32 teeth
 ```
-
-Note: `decline-word` declines English words incorrect. Just because of `if not equal one` is very simple check algorithm (and I'm too lazy to change already made one) this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correct.
 
 ## Advanced usage
 ```ts

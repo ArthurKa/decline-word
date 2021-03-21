@@ -30,5 +30,5 @@ export default function declineWord(
   return `${mainPart}${endingForFive}`;
 }
 
-export const wrap = (body: string, ...args: (string | undefined)[]) => (n: number) => declineWord(n, body, ...args);
+export const wrap = (mainPart: string, ...args: (string | undefined)[]) => (n: number) => declineWord(n, mainPart, ...args);
 export const declineWrapper = wrap;
