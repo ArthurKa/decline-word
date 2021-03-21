@@ -1,10 +1,15 @@
-[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.2.11?style=flat-square "All dependencies of decline-word@1.2.11")](https://libraries.io/npm/decline-word/1.2.11)
-[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.2.11?style=flat-square "Reported vulnerabilities of decline-word@1.2.11")](https://snyk.io/test/npm/decline-word/1.2.11)
-[![NPM-version](https://img.shields.io/badge/npm-v1.2.11-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.2.11)
-[![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.2.11?label=size 'Install size of decline-word@1.2.11')](https://packagephobia.now.sh/result?p=decline-word@1.2.11)
+[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.3.0?style=flat-square "All dependencies of decline-word@1.3.0")](https://libraries.io/npm/decline-word/1.3.0)
+[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.3.0?style=flat-square "Reported vulnerabilities of decline-word@1.3.0")](https://snyk.io/test/npm/decline-word/1.3.0)
+[![Commits](https://flat.badgen.net/github/commits/ArthurKa/decline-word)](https://github.com/ArthurKa/decline-word/commits/master)
+[![NPM-version](https://img.shields.io/badge/npm-v1.3.0-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.3.0)
 [![Total downloads](https://img.shields.io/npm/dt/decline-word?style=flat-square "Total downloads for all the time")](https://npm-stat.com/charts.html?package=decline-word)
+[![Developed by](https://img.shields.io/badge/developed_by-ArthurKa-blueviolet.svg?style=flat-square "Have any questions? You are always welcome.")](https://github.com/ArthurKa/decline-word/issues)\
+[![Publish size](https://flat.badgen.net/packagephobia/publish/decline-word@1.3.0?label=publish 'Publish size of decline-word@1.3.0')](https://packagephobia.now.sh/result?p=decline-word@1.3.0)
+[![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.3.0?label=install 'Install size of decline-word@1.3.0')](https://packagephobia.now.sh/result?p=decline-word@1.3.0)
+[![Minified size](https://img.shields.io/bundlephobia/min/decline-word@1.3.0?style=flat-square&label=minified "Minified size of decline-word@1.3.0")](https://bundlephobia.com/result?p=decline-word@1.3.0)
+[![Minified + gzipped size](https://img.shields.io/bundlephobia/minzip/decline-word@1.3.0?style=flat-square&label=minzipped "Minified + gzipped size of decline-word@1.3.0")](https://bundlephobia.com/result?p=decline-word@1.3.0)
 
-# decline-word@1.2.11
+# decline-word@1.3.0
 
 Helps you to decline words in **Russian**, **Ukrainian** and **English** languages.\
 It may work for some other languages, who knows.
@@ -12,7 +17,7 @@ It may work for some other languages, who knows.
 ## Installation
 `decline-word` is available via npm:
 ``` bash
-$ npm i decline-word@1.2.11
+$ npm i decline-word@1.3.0
 ```
 
 ## Usage
@@ -25,8 +30,8 @@ $ npm i decline-word@1.2.11
 | 4th       | false    | `''`          | word ending for **2 items**                                     |
 | 5th       | false    | `''`          | word ending for **5 items**                                     |
 
-``` js
-const declineWord = require('decline-word');
+```ts
+import declineWord from 'decline-word';
 
 console.log(`12 ${declineWord(12, 'яблок', 'о', 'а')}`);  // 12 яблок
 console.log(`22 ${declineWord(22, 'яблок', 'о', 'а')}`);  // 22 яблока
@@ -57,8 +62,8 @@ There are some differences of default parameter values comparing with the Russia
 
 This difference makes more convenience for using with English words.
 
-``` js
-const declineWord = require('decline-word');
+```ts
+import declineWord from 'decline-word';
 
 console.log(`1 ${declineWord(1, 'door')}`);  // 1 door
 console.log(`10 ${declineWord(10, 'door')}`);  // 10 doors
@@ -77,12 +82,12 @@ console.log(`32 ${declineWord(32, '', 'tooth', 'teeth')}`);  // 32 teeth
 Note: `decline-word` declines English words incorrect. Just because of `if not equal one` is very simple check algorithm (and I'm too lazy to change already made one) this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correct.
 
 ## Advanced usage
-``` js
-const declineWord = require('decline-word');
+```ts
+import { declineWrapper } from 'decline-word';
 
-const declApples = declineWord.wrap('яблок', 'о', 'а');
-const declOranges = declineWord.wrap('апельсин', '', 'а', 'ов');
-const declPears = declineWord.wrap('груш', 'а', 'и');
+const declApples = declineWrapper('яблок', 'о', 'а');
+const declOranges = declineWrapper('апельсин', '', 'а', 'ов');
+const declPears = declineWrapper('груш', 'а', 'и');
 
 for(let i = 0; i <= 6; i++) {
   console.log(`${i} ${declApples(i)} | ${i} ${declOranges(i)} | ${i} ${declPears(i)}`);
@@ -100,8 +105,8 @@ for(let i = 0; i <= 6; i++) {
 ```
 
 ### Declination of cases:
-``` js
-const { declineWrapper } = require('decline-word');
+```ts
+import { declineWrapper } from 'decline-word';
 
 // Nominative case, именительный падеж, називний відмінок
 const nomCase = declineWrapper('падеж', '', 'а', 'ей');
@@ -150,4 +155,4 @@ $ npm test
 
 ---
 
-Your improve suggestions and bug reports are welcome any time.
+Your improve suggestions and bug reports [are welcome](https://github.com/ArthurKa/decline-word/issues) any time.

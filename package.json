@@ -1,21 +1,32 @@
 {
   "name": "decline-word",
-  "version": "1.2.11",
+  "version": "1.3.0",
   "description": "Declines words in Russian, Ukrainian and English languages.",
-  "main": "declineWord.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "directories": {
     "test": "test"
   },
   "keywords": [
-    "decline word",
-    "word declination",
-    "word declension",
+    "decline-word",
+    "word-decliner",
+    "word-declination",
+    "word-declension",
     "singular",
     "plural",
-    "склонение слов"
+    "склонение-слов",
+    "падеж",
+    "падежи"
   ],
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "build:clean": "rm -rf build/*",
+    "ts-compile": "tsc --declaration",
+    "my-compile": "node ../compile.js",
+    "build": "npm run build:clean && npm run ts-compile && npm run my-compile",
+    "publish:prepare": "mkdir -p ./build/build && mv ./build/* ./build/build; cp ./package* README.md ./build",
+    "pu": "npm pu ./build",
+    "my-publish": "npm run publish:prepare && npm run pu"
   },
   "repository": {
     "type": "git",
@@ -31,6 +42,7 @@
   },
   "homepage": "https://github.com/ArthurKa/decline-word#readme",
   "devDependencies": {
-    "mocha": "^6.2.1"
+    "mocha": "^6.2.3",
+    "typescript": "^4.2.3"
   }
 }
