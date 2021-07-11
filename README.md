@@ -1,15 +1,15 @@
-[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.3.1?style=flat-square "All dependencies of decline-word@1.3.1")](https://libraries.io/npm/decline-word/1.3.1)
-[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.3.1?style=flat-square "Reported vulnerabilities of decline-word@1.3.1")](https://snyk.io/test/npm/decline-word/1.3.1)
+[![All dependencies](https://img.shields.io/librariesio/release/npm/decline-word/1.4.0?style=flat-square "All dependencies of decline-word@1.4.0")](https://libraries.io/npm/decline-word/1.4.0)
+[![Reported vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/decline-word@1.4.0?style=flat-square "Reported vulnerabilities of decline-word@1.4.0")](https://snyk.io/test/npm/decline-word/1.4.0)
 [![Commits](https://flat.badgen.net/github/commits/ArthurKa/decline-word)](https://github.com/ArthurKa/decline-word/commits/master)
-[![NPM-version](https://img.shields.io/badge/npm-v1.3.1-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.3.1)
+[![NPM-version](https://img.shields.io/badge/npm-v1.4.0-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.4.0)
 [![Total downloads](https://img.shields.io/npm/dt/decline-word?style=flat-square "Total downloads for all the time")](https://npm-stat.com/charts.html?package=decline-word)
 [![Developed by](https://img.shields.io/badge/developed_by-ArthurKa-blueviolet.svg?style=flat-square "GitHub")](https://github.com/ArthurKa)\
-[![Publish size](https://flat.badgen.net/packagephobia/publish/decline-word@1.3.1?label=publish 'Publish size of decline-word@1.3.1')](https://packagephobia.now.sh/result?p=decline-word@1.3.1)
-[![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.3.1?label=install 'Install size of decline-word@1.3.1')](https://packagephobia.now.sh/result?p=decline-word@1.3.1)
-[![Minified size](https://img.shields.io/bundlephobia/min/decline-word@1.3.1?style=flat-square&label=minified "Minified size of decline-word@1.3.1")](https://bundlephobia.com/result?p=decline-word@1.3.1)
-[![Minified + gzipped size](https://img.shields.io/bundlephobia/minzip/decline-word@1.3.1?style=flat-square&label=minzipped "Minified + gzipped size of decline-word@1.3.1")](https://bundlephobia.com/result?p=decline-word@1.3.1)
+[![Publish size](https://flat.badgen.net/packagephobia/publish/decline-word@1.4.0?label=publish 'Publish size of decline-word@1.4.0')](https://packagephobia.now.sh/result?p=decline-word@1.4.0)
+[![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.4.0?label=install 'Install size of decline-word@1.4.0')](https://packagephobia.now.sh/result?p=decline-word@1.4.0)
+[![Minified size](https://img.shields.io/bundlephobia/min/decline-word@1.4.0?style=flat-square&label=minified "Minified size of decline-word@1.4.0")](https://bundlephobia.com/result?p=decline-word@1.4.0)
+[![Minified + gzipped size](https://img.shields.io/bundlephobia/minzip/decline-word@1.4.0?style=flat-square&label=minzipped "Minified + gzipped size of decline-word@1.4.0")](https://bundlephobia.com/result?p=decline-word@1.4.0)
 
-# decline-word@1.3.1
+# decline-word@1.4.0
 
 Helps you to inflect words of **Russian**, **Ukrainian** and **English** languages.\
 It may work for some other languages, who knows.
@@ -17,7 +17,7 @@ It may work for some other languages, who knows.
 ## Installation
 `decline-word` is available via NPM:
 ```bash
-$ npm i decline-word@1.3.1
+$ npm i decline-word@1.4.0
 ```
 
 ## Usage
