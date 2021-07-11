@@ -16,7 +16,7 @@ It may work for some other languages, who knows.
 | 5th       | false    | `''`          | word ending for **5 items**                                     |
 
 ```ts
-import declineWord from './decline-word';
+import declineWord from './decline-word/src';
 
 console.log(`12 ${declineWord(12, 'яблок', 'о', 'а')}`);  // 12 яблок
 console.log(`22 ${declineWord(22, 'яблок', 'о', 'а')}`);  // 22 яблока
@@ -47,10 +47,10 @@ There are some differences of parameter default values comparing to Russian and 
 
 This difference makes more convenience for using English words.
 
-Note: `decline-word` declines English words incorrect according to language rules. Just because of `if not equal to one` is very simple check algorithm (and I'm too lazy to change already made one) this package declines them according to Russian/Ukrainian language rules. Do not use `decline-word` for English language if you want to decline words correctly.
+Note: `<pkg.name>` declines English words incorrect according to language rules. Just because of `if not equal to one` is very simple check algorithm (and I'm too lazy to change already made one) this package declines them according to Russian/Ukrainian language rules. Do not use `<pkg.name>` for English language if you want to decline words correctly.
 
 ```ts
-import declineWord from './decline-word';
+import declineWord from './decline-word/src';
 
 console.log(`1 ${declineWord(1, 'door')}`);  // 1 door
 console.log(`10 ${declineWord(10, 'door')}`);  // 10 doors
@@ -68,7 +68,7 @@ console.log(`32 ${declineWord(32, '', 'tooth', 'teeth')}`);  // 32 teeth
 
 ## Advanced usage
 ```ts
-import { declineWrapper } from './decline-word';
+import { declineWrapper } from './decline-word/src';
 
 const declApples = declineWrapper('яблок', 'о', 'а');
 const declOranges = declineWrapper('апельсин', '', 'а', 'ов');
@@ -91,7 +91,7 @@ for(let i = 0; i <= 6; i++) {
 
 ### Declination of cases:
 ```ts
-import { declineWrapper } from './decline-word';
+import { declineWrapper } from './decline-word/src';
 
 // Nominative case, именительный падеж, називний відмінок
 const nomCase = declineWrapper('падеж', '', 'а', 'ей');

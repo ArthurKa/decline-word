@@ -3,7 +3,7 @@
 [![Commits](https://flat.badgen.net/github/commits/ArthurKa/decline-word)](https://github.com/ArthurKa/decline-word/commits/master)
 [![NPM-version](https://img.shields.io/badge/npm-v1.3.1-blue.svg?style=flat-square&&logo=npm "Current NPM-version")](https://www.npmjs.com/package/decline-word/v/1.3.1)
 [![Total downloads](https://img.shields.io/npm/dt/decline-word?style=flat-square "Total downloads for all the time")](https://npm-stat.com/charts.html?package=decline-word)
-[![Developed by](https://img.shields.io/badge/developed_by-ArthurKa-blueviolet.svg?style=flat-square "Have any questions? You are always welcome.")](https://github.com/ArthurKa/decline-word/issues)\
+[![Developed by](https://img.shields.io/badge/developed_by-ArthurKa-blueviolet.svg?style=flat-square "GitHub")](https://github.com/ArthurKa)\
 [![Publish size](https://flat.badgen.net/packagephobia/publish/decline-word@1.3.1?label=publish 'Publish size of decline-word@1.3.1')](https://packagephobia.now.sh/result?p=decline-word@1.3.1)
 [![Install size](https://flat.badgen.net/packagephobia/install/decline-word@1.3.1?label=install 'Install size of decline-word@1.3.1')](https://packagephobia.now.sh/result?p=decline-word@1.3.1)
 [![Minified size](https://img.shields.io/bundlephobia/min/decline-word@1.3.1?style=flat-square&label=minified "Minified size of decline-word@1.3.1")](https://bundlephobia.com/result?p=decline-word@1.3.1)
@@ -15,8 +15,8 @@ Helps you to inflect words of **Russian**, **Ukrainian** and **English** languag
 It may work for some other languages, who knows.
 
 ## Installation
-`decline-word` is available via npm:
-``` bash
+`decline-word` is available via NPM:
+```bash
 $ npm i decline-word@1.3.1
 ```
 
@@ -146,7 +146,7 @@ console.log('на пяти', prepCase(5));  // на пяти падежах
 ```
 
 ## Testing
-``` bash
+```bash
 $ npm test
 ```
 
